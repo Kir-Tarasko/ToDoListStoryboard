@@ -28,16 +28,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYl-j2-Ymz">
-                                                    <rect key="frame" x="20" y="11" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYl-j2-Ymz">
+                                                    <rect key="frame" x="20" y="11.333333333333336" width="315.33333333333331" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VW6-hu-F05">
-                                                    <rect key="frame" x="340" y="4" width="49" height="35"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VW6-hu-F05">
+                                                    <rect key="frame" x="343.33333333333331" y="4" width="45.666666666666686" height="35.666666666666664"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" image="square" catalog="system"/>
                                                     <connections>
@@ -45,7 +43,19 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cYl-j2-Ymz" firstAttribute="top" secondItem="9Ni-6K-Sbu" secondAttribute="topMargin" constant="0.3333333333333357" id="BJ6-Hh-A2e"/>
+                                                <constraint firstItem="cYl-j2-Ymz" firstAttribute="leading" secondItem="9Ni-6K-Sbu" secondAttribute="leadingMargin" id="NbJ-oI-qOt"/>
+                                                <constraint firstItem="VW6-hu-F05" firstAttribute="top" secondItem="9Ni-6K-Sbu" secondAttribute="topMargin" constant="-7" id="Onw-aP-P77"/>
+                                                <constraint firstAttribute="trailing" secondItem="VW6-hu-F05" secondAttribute="trailing" constant="4" id="Zyn-te-pox"/>
+                                                <constraint firstItem="cYl-j2-Ymz" firstAttribute="centerY" secondItem="9Ni-6K-Sbu" secondAttribute="centerY" id="dra-PS-mrW"/>
+                                                <constraint firstItem="cYl-j2-Ymz" firstAttribute="centerY" secondItem="VW6-hu-F05" secondAttribute="centerY" id="hhc-DL-Dzl"/>
+                                                <constraint firstItem="VW6-hu-F05" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cYl-j2-Ymz" secondAttribute="trailing" constant="8" symbolic="YES" id="pSk-vH-q88"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstItem="cYl-j2-Ymz" firstAttribute="width" secondItem="BR3-Am-nWw" secondAttribute="width" multiplier="0.8" constant="1" id="JSQ-W5-VfP"/>
+                                        </constraints>
                                         <connections>
                                             <outlet property="toDoButton" destination="VW6-hu-F05" id="rxi-0w-Fra"/>
                                             <outlet property="toDoLabel" destination="cYl-j2-Ymz" id="O9x-dE-4Jg"/>
