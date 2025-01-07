@@ -6,3 +6,11 @@
 //
 
 import Foundation
+import UIKit
+
+class ToDoTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var toDoLabel: UILabel!
+    @IBOutlet weak var toDoButton: UIButton!
+    
+}

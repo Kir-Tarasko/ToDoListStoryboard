@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ToDo {
+class Todo {
     
     var name: String
     let isCompleted: Bool
