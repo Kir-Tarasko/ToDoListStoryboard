@@ -10,7 +10,7 @@ import Foundation
 class Todo {
     
     var name: String
-    let isCompleted: Bool
+    var isCompleted: Bool
     let id: UUID
     
     init(name: String, isCompleted: Bool, id: UUID = UUID()) {
